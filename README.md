@@ -127,7 +127,7 @@ Hold the pose for a few seconds to validate the position.
 If detection fails, it may be due to the angle of your arms relative to the camera.
 Adjust the angle by slightly raising or lowering your arms over your head, ensuring your hands are close together, for better detection.
 
-3.5 Bowing (inclinaison) : 
+3.5 Bowing (inclination) : 
 To perform the bowing movement, follow these steps:
 
 Initial Position:
