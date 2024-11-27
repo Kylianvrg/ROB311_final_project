@@ -127,14 +127,22 @@ Hold the pose for a few seconds to validate the position.
 If detection fails, it may be due to the angle of your arms relative to the camera.
 Adjust the angle by slightly raising or lowering your arms over your head, ensuring your hands are close together, for better detection.
 
-3.5 Bowing : 
-Pour faire le bowing, il faut : 
-Mettre les mains le long de son corps tout le mouvement
-Première étape, rejoindre les mains le long de son corps (Etat none à état init_timer) et attendre 1.5 secondes (état init_timer à init)
-Seconde étape, descendre le buste pour procéder au mouvement bowing. En bas, maintenir la position au moins une seconde (état init à descending_complet)
-Troisième étape, se relever. Le mouvement est validé.
-Si l'état est à init ou à descending_complete et que les bras ne sont plus le long du corps, cela envoie le message "arm_near_body"
+3.5 Bowing (inclinaison) : 
+To perform the bowing movement, follow these steps:
 
+Initial Position:
+Place your arms along the sides of your body throughout the entire movement.
+First Step: Bring your arms to rest along your body (transition from state none to init_timer). Hold this position for 1.5 seconds (transition from state init_timer to init).
+
+Bowing Movement:
+Lower your upper body to perform the bowing motion.
+At the lowest point, hold the position for at least 1 second (transition from state init to descending_complete).
+
+Returning to Standing Position:
+Straighten your body back to the initial position. The movement is considered complete.
+
+Important Note:
+If the state is init or descending_complete and the arms are no longer aligned with the sides of the body, a message arm_near_body will be triggered.
 
 4. Troubleshooting
 
